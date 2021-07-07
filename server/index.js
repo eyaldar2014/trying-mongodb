@@ -25,6 +25,7 @@ app.use(cors())
 
 
 // reactRouter for users & tasks : required
+app.get('/', (req, res) => res.send('hello world'))
 app.use('/users', usersRouter)
 app.use('/tasks', tasksRouter)
 
